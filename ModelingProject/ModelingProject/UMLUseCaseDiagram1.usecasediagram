@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1ac5c421-4d83-4f42-a44d-cf22d6eb7d49" name="UMLUseCaseDiagram1" linkedPackageId="3fadfa48-eff9-45f3-9c13-2a68c3ae3ce6" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="8a205fbe-9f24-4ecc-8c95-388ad9a91246">
+      <profileInstance Id="b0a330ad-4522-4869-9204-490c4aad6181" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="05cfe2e6-43e4-4587-bbc6-e145e6897cf9">
+      <profileInstance Id="2edad173-9601-4eed-876f-fe202ba74734" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="fd96a886-e542-44f4-833e-52922cff9f27" name="Pracownik szkoły" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f4f20593-9b89-44d2-a524-46bc407acf6c" />
+        <targetEnds>
+          <association Id="4c10b546-5ed7-40f3-aff0-24fd0f13f82a" isDerived="false" sourceEndRoleName="Pracownik szkoły" targetEndRoleName="Wygeneruj raport godzin pracy" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="070b340c-5eb5-4397-a828-748c419e44fe" LastKnownName="Wygeneruj raport godzin pracy" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2c070ac-3b09-4202-8e00-b4b2c39f1a23" name="Pracownik szkoły" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c98e9411-365e-4b51-a44a-82d24ed115f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d67bd5c-cc28-4bd6-908b-2beba95e953f" name="Wygeneruj raport godzin pracy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9f505c4a-7ee9-4cf1-b0a0-1152af3eef4b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5c3256bf-9780-48a2-97a3-1e5cc7e515fc" />
+          </association>
+          <association Id="a79761f2-817e-4a5c-a3fe-af94e9e8e7bc" isDerived="false" sourceEndRoleName="Pracownik szkoły" targetEndRoleName="Sprawdzenie grafiku pracy" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="25ff3e25-962e-46fa-89a0-bfb81e102c5e" LastKnownName="Sprawdz grafik pracy" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f695796-ca10-4b3b-8b86-52b7bb957525" name="Pracownik szkoły" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b73bc14c-a440-4bdb-bb56-af12a0aaab0e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="092e2dd1-c7eb-46dd-8751-e7b50da94bdc" name="Sprawdzenie grafiku pracy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7a168715-b066-4c96-8860-940514eb135b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e4116616-9ec4-4b72-96c4-f62ddd932062" />
+          </association>
+          <association Id="d44218cf-c50a-4861-8d11-880082ad2ab9" isDerived="false" sourceEndRoleName="Pracownik szkoły" targetEndRoleName="Sprawdzenie dni wolnych" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7d1b3b9c-3b90-4166-b7c8-407d27ab1a9f" LastKnownName="Sprawdz  dni wolne od nauki" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e1eed55-76dd-460b-911a-659a2089c8c3" name="Pracownik szkoły" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9c856fba-0fd4-45e4-9db0-bd6675ce244f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69dcfb1d-8636-4308-b1cd-a65addb751f9" name="Sprawdzenie dni wolnych" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1dbfac52-ac33-4e01-ad28-acb36b65928b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3cfe5304-f971-4915-a48e-c3409f90b092" />
+          </association>
+          <association Id="fd1870d4-705d-4292-9b0e-b29fb3a8a79c" isDerived="false" sourceEndRoleName="Pracownik szkoły" targetEndRoleName="Wybór dni urlopu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="611ea7ce-a719-4b4a-817b-d630527263f8" LastKnownName="Wybierz dni urlopu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ea6470a-ed40-47e0-940e-10515717a2ed" name="Pracownik szkoły" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bd986353-6e59-4e27-971e-c909b76d97e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0a55793-7fe1-49f2-ad75-df0a315f1934" name="Wybór dni urlopu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f50c70c8-28a3-4ae9-a3d7-f734591c8f05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4327777d-029c-401d-9c3c-b1005e15e90c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e1617f4d-0c6e-40de-b65b-d855a81a06f7" name="Uczeń" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="918cdcf0-175e-4ee7-853a-33c1da79cc74" />
+        <targetEnds>
+          <association Id="3f1952c5-1b7f-460a-a2a4-485870b5e351" isDerived="false" sourceEndRoleName="Uczeń" targetEndRoleName="Sprawdzenie oceny" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="994220a5-2f6f-48e4-ac9b-2e9fc98f4a3b" LastKnownName="Sprawdz oceny" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5d64d27-524c-4fe2-9159-e9a8c924e963" name="Uczeń" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5137ddb8-5ebc-4738-a78a-b0c615c92668" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd80e3ca-7c78-4ed4-ad8c-72dd1f6d9d0b" name="Sprawdzenie oceny" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8e3cb3d3-4a18-477e-9ad4-4be6b0edd83a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d451823f-6593-40ab-8ae5-5b1772093227" />
+          </association>
+          <association Id="64726129-e953-4aab-9724-d84836ef02c2" isDerived="false" sourceEndRoleName="Uczeń" targetEndRoleName="Sprawdzenie planu Zajec" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4a0c3f98-7fe8-40c3-9f77-b58226151b1f" LastKnownName="Sprawdz plan Zajec" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f779e465-df9e-4bc8-af88-4a5f3c51368f" name="Uczeń" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0215b7f1-077d-4d28-9b4f-edc21f98043e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="11927f58-2e60-4b40-8cff-99dc6f09e4bf" name="Sprawdzenie planu Zajec" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f8e9c646-6193-4eba-9c78-4aced7b81214" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bee25fc3-f587-46d7-bd60-910667836fcf" />
+          </association>
+          <association Id="3fd82cd3-2a21-49dc-9a6b-1645f31651a9" isDerived="false" sourceEndRoleName="Uczeń" targetEndRoleName="Sprawdzenie dni wolnych" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7d1b3b9c-3b90-4166-b7c8-407d27ab1a9f" LastKnownName="Sprawdz  dni wolne od nauki" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95d0643f-51ed-47fd-b84f-2fb9920e883b" name="Uczeń" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6d143f58-1fc7-437b-9926-4d464bb8697c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b299cfb-6ae7-4fd4-b4da-c6f2fde7205e" name="Sprawdzenie dni wolnych" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0546f328-8a72-4d2c-9530-9f3047255b32" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e9824fa6-1034-4530-a248-13c713e9ecab" />
+          </association>
+          <association Id="5e0d52f6-922d-451f-8825-a8a1b79439f5" isDerived="false" sourceEndRoleName="Uczeń" targetEndRoleName="sprawdzenie stanu frekwencji" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6706c591-084b-4ad0-9d06-873699fb8656" LastKnownName="sprawdz stan frekwencji" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c24b964-214f-49e0-a0fb-22a055f2d3b0" name="Uczeń" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2aaf7d94-babc-4e34-82c4-0709d3a8c1ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5f325b0-697a-48ad-a765-319f80f78a09" name="sprawdzenie stanu frekwencji" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="55f3675a-eb10-4e51-9435-6a6c503c02c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c003a4ea-d9b7-461c-b936-8ce174dffdd5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="847d3a4d-1e46-4f67-9c36-9adfa85ae8b1" name="Nauczyciel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4c11d99-22c2-40b4-b630-cebc13b2db4c" />
+        <generalsInternal>
+          <generalization Id="f80abafd-6c32-4fd8-8098-c0b25b654da1" isSubstitutable="false">
+            <actorMoniker Id="fd96a886-e542-44f4-833e-52922cff9f27" LastKnownName="Pracownik szkoły" />
+            <elementDefinition Id="8e55be75-acdc-4a38-812a-56a1a973e629" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="72cc6cf1-3626-40dd-ab57-dd3cf9670b46" isDerived="false" sourceEndRoleName="Nauczyciel" targetEndRoleName="Dodanie zadania domowego dla wybranej grupy uczniów" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="820e916e-45fb-438c-aae6-65091bc0584c" LastKnownName="Dodaj zadania domowe dla wybranej grupy uczniów" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="363a53ab-fc60-489a-a033-751e5717164f" name="Nauczyciel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0cab1d8f-5b33-4a04-a41a-b5ffa703cf1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa51cc01-a72b-4aeb-ba55-b6d7de783d34" name="Dodanie zadania domowego dla wybranej grupy uczniów" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5e3fb7c9-b0ee-4591-8167-55fb733cb4c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b65835d8-fcea-4167-8fd9-1bd976dfe891" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="19ea1861-0cf3-4c70-8e21-0da16648c62c" name="Dyrektor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70945e6a-b8ad-48ea-a6b3-fb36cbdc313c" />
+        <generalsInternal>
+          <generalization Id="43d3bcce-30ac-425d-be47-03043bb7cdd1" isSubstitutable="false">
+            <actorMoniker Id="09f69302-7910-4656-8e5d-caf7092d244e" LastKnownName="Pracownik administracji" />
+            <elementDefinition Id="1e440279-f12b-458a-9cd8-8a80fac048b8" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="c7c2342e-0348-4837-ad89-2d90780cec6c" isDerived="false" sourceEndRoleName="Dyrektor" targetEndRoleName="Umieszczenie informacji o odwołaniu szkoły" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="87da9e38-d016-4245-b740-cfd05aa34f7b" LastKnownName="Dodaj informacje o odwołaniu zajec" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f891afdc-a580-4bf6-bd45-c9599937c866" name="Dyrektor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c4e0ee44-d33f-489d-ac43-a5bcc610a6be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="24170254-dddb-42a2-9b17-0db3eb501421" name="Umieszczenie informacji o odwołaniu szkoły" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ad45111d-6710-4c95-a4de-372cbab72285" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="327a13ed-a5e5-4a6d-baf2-6d24ca91e0c9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c11fe5d1-1861-4fa3-9074-c4b55b35ae4a" name="Sekretarka" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c79ceded-7eb9-46c7-b21e-7f895f63960e" />
+        <generalsInternal>
+          <generalization Id="463c1b03-cb5e-48c2-b489-939212466bb8" isSubstitutable="false">
+            <actorMoniker Id="09f69302-7910-4656-8e5d-caf7092d244e" LastKnownName="Pracownik administracji" />
+            <elementDefinition Id="ff4ac615-4cf4-4a65-a883-66c92efb5c0e" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="920aa2cf-e26b-47b2-8d0c-65e4ddc16ce8" isDerived="false" sourceEndRoleName="Sekretarka" targetEndRoleName="Wygenerowanie wartości  przychodów i  wydatków" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5f87e1e2-4c5a-40b6-8bde-ce879b61d568" LastKnownName="Wygeneruj wartości  przychodów i  wydatków" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="42043577-d739-4458-ab2f-876b8e22fba5" name="Sekretarka" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="25c0544c-1d75-436e-86cd-aaff3473f495" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8bb5662f-47e4-48c9-a801-03105e2ab139" name="Wygenerowanie wartości  przychodów i  wydatków" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c7da9731-be19-48a5-88aa-c0fd1d0639a6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="492a259e-c26b-4dac-b1e0-1d9da6c78694" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="994220a5-2f6f-48e4-ac9b-2e9fc98f4a3b" name="Sprawdz oceny" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d2ca85b8-4dfe-407e-ac28-fbe80332dca9" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4a0c3f98-7fe8-40c3-9f77-b58226151b1f" name="Sprawdz plan Zajec" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e01e328c-c966-4c19-ae6e-db8ad2a578ed" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="09f69302-7910-4656-8e5d-caf7092d244e" name="Pracownik administracji" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="49d49a98-5fa5-4b18-a8b5-f07d36b55edc" />
+        <generalsInternal>
+          <generalization Id="9fdc2995-2599-4de6-896f-4f105253b98d" isSubstitutable="false">
+            <actorMoniker Id="fd96a886-e542-44f4-833e-52922cff9f27" LastKnownName="Pracownik szkoły" />
+            <elementDefinition Id="a91b7b12-9efc-4339-bb33-f973e962c456" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="1b39f950-a6b2-49ee-95d1-b0fe9fa0275d" isDerived="false" sourceEndRoleName="Pracownik administracji" targetEndRoleName="Sprawdzenie ilości pracowników" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0bdfd6a2-fa49-4ec4-b159-bda2744f5897" LastKnownName="Sprawdz ilości pracowników" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a49bbfa-6208-4e43-af1f-cf4f4cbe6470" name="Pracownik administracji" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="07379957-0818-4682-8b4d-7d45aff6c2ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9cd1c4bd-d434-47e7-9582-dff6c4a01884" name="Sprawdzenie ilości pracowników" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4acbef52-4f0a-4054-a1cb-b8876973c3b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="965aa211-0621-4b5e-b1fb-77b5d4b5ae1b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" name="System szkolny" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77387d3e-694d-46ce-88df-bc3d6e6bab2b" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="070b340c-5eb5-4397-a828-748c419e44fe" name="Wygeneruj raport godzin pracy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="768b6fb2-4725-42e5-a2e5-c94f5acb8887" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="25ff3e25-962e-46fa-89a0-bfb81e102c5e" name="Sprawdz grafik pracy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="321aabec-0f32-4c9d-9b7b-3c2fafa5fa61" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7d1b3b9c-3b90-4166-b7c8-407d27ab1a9f" name="Sprawdz  dni wolne od nauki" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="de7d8f6d-a722-4b45-8f18-9ea77909d2f3" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="611ea7ce-a719-4b4a-817b-d630527263f8" name="Wybierz dni urlopu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fbc0e1d7-cfeb-44f6-a3b8-1e1c0f723390" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5f87e1e2-4c5a-40b6-8bde-ce879b61d568" name="Wygeneruj wartości  przychodów i  wydatków" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c9c22f6-db3b-464f-8b94-073012fec291" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="db56e9f8-c05a-41e0-94f5-704d53196b7d" name="Sprawdz możliwe dni urlopu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6502bd91-f57b-49d8-9455-be8c9d9eee11" />
+        <additions>
+          <include Id="4d0d4fcf-6b2e-4eee-a943-0432864c51f3">
+            <useCaseMoniker Id="611ea7ce-a719-4b4a-817b-d630527263f8" LastKnownName="Wybierz dni urlopu" />
+            <elementDefinition Id="9afb6c63-dd09-4bf0-8200-9033579ede71" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="87da9e38-d016-4245-b740-cfd05aa34f7b" name="Dodaj informacje o odwołaniu zajec" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="06619697-95cb-4303-ad3f-8e0609f96b9f" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="76204295-d3ae-4489-8bf4-baf04f43f9b9" name="Sprawdz liczbe  godzin nieobecnosci" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="970c00d3-aeb9-43e2-8353-b7d500d6ad78" />
+        <additions>
+          <include Id="53bcf66f-024a-47df-9b90-05e4ba5f665a">
+            <useCaseMoniker Id="6706c591-084b-4ad0-9d06-873699fb8656" LastKnownName="sprawdz stan frekwencji" />
+            <elementDefinition Id="5696bf5a-885c-40c0-9df2-dc4b9ffb79fd" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="06aec55a-33be-41fa-a8c4-022ec003eb2d" name="sprawdz liczbe godzin usprawiedliwonych" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83a9b67c-2241-4466-90a9-cde30abd1ec3" />
+        <extendedCases>
+          <extend Id="47c26555-cad8-424f-8380-3eb1b2ae7470">
+            <useCaseMoniker Id="76204295-d3ae-4489-8bf4-baf04f43f9b9" LastKnownName="Sprawdz liczbe  godzin nieobecnosci" />
+            <elementDefinition Id="5e1e4fd1-5af2-41d1-9d4a-a8b618d80251" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e7118faf-65cc-450c-9f47-a91f381e4d76" name="sprawdz liczbe godzin nieusprawiedliownych" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2a3d70d-d872-4c86-acc0-8d13074d9d19" />
+        <extendedCases>
+          <extend Id="1a099af5-ad4e-4445-a652-5ce1aa809273">
+            <useCaseMoniker Id="76204295-d3ae-4489-8bf4-baf04f43f9b9" LastKnownName="Sprawdz liczbe  godzin nieobecnosci" />
+            <elementDefinition Id="643b4c63-7f4a-4a99-842a-a702509d2d2d" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5db1eaf9-b38e-4e6c-9e34-fd3b8e5cd1f7" name="sprawdz liczbe spoznien" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1377e484-8ac5-413a-b884-c8283d5957ef" />
+        <additions>
+          <include Id="4166efe8-96da-426b-be7e-1fd5ce433e4d">
+            <useCaseMoniker Id="6706c591-084b-4ad0-9d06-873699fb8656" LastKnownName="sprawdz stan frekwencji" />
+            <elementDefinition Id="20a859ec-0ab0-410a-ba60-f7eba6b4fa34" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6706c591-084b-4ad0-9d06-873699fb8656" name="sprawdz stan frekwencji" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc7a7bac-bad2-4a59-a7b0-83e580206a43" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="820e916e-45fb-438c-aae6-65091bc0584c" name="Dodaj zadania domowe dla wybranej grupy uczniów" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="24848384-e5a9-4dc6-a46b-593c1a605528" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ec785774-087f-4cb3-ae92-88345054cfc7" name="Wyslij maila z powiadomoeniem o zadaniu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b2dcc7c-a870-45d7-addb-b39e70c34418" />
+        <additions>
+          <include Id="a7c41617-dbae-4a3d-a9d4-42a3c260a436">
+            <useCaseMoniker Id="820e916e-45fb-438c-aae6-65091bc0584c" LastKnownName="Dodaj zadania domowe dla wybranej grupy uczniów" />
+            <elementDefinition Id="1772322c-ab56-460a-aeb1-d1a2493383e4" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0bdfd6a2-fa49-4ec4-b159-bda2744f5897" name="Sprawdz ilości pracowników" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d1885e8d-e2d0-4d93-9efc-d62b26c044e3" />
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="21538dbc-2665-4942-b314-1ab107efbb0f" name="wygeneruj listy z podziałem na role" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="afc8fec7-c9a7-4318-9b91-2a6d587f23b2" />
+        <extendedCases>
+          <extend Id="61e89693-e01b-424a-8e7f-1cd8c4c6724a">
+            <useCaseMoniker Id="0bdfd6a2-fa49-4ec4-b159-bda2744f5897" LastKnownName="Sprawdz ilości pracowników" />
+            <elementDefinition Id="fd55f332-15e0-4c71-af20-66a433b58d2b" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="48fdfb8c-e1c9-4538-939c-6b791137dba6" LastKnownName="System szkolny" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="3fadfa48-eff9-45f3-9c13-2a68c3ae3ce6" name="ModelingProject">
+    <elementDefinition Id="47de9a31-6a05-4c2d-bdca-d4d6861a2abd" />
+  </package>
+</useCaseModelRoot>
